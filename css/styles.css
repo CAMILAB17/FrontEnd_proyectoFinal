@@ -26,51 +26,51 @@ body {
   min-height: 100vh;
 }
 
-/* selecciono mas de un selector a la vez para aplicar mismos estilos */
-.header{
-  background-color: rgb(181, 128, 224);
-  /* le doy al header y footer 10vh para darle 80 al main */
-  /* esto lo hago provisoriamente, pero podemos no querer que el footer */
-  height: 12vh;
+.header {
+  background: linear-gradient(90deg, #e7b9ff, #d79bff);
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 4px solid #ffffffaa;
+  box-shadow: 0 4px 10px rgba(120, 0, 150, 0.2);
 }
 
 .header__logo {
-  padding: 1rem;
-  margin-left: 2rem;
-
   font-size: 3rem;
   font-weight: bold;
-}
-.header__logo a {
   color: #3a053f;
-  text-decoration: none;
+  margin: 0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
-/* Algunas clases con BEM, a modo ejemplo */
-.header__nav {
-  padding: 1rem;
-  margin-right: 2rem;
+.header__logo a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header__nav ul {
-  /* quitamos las viñetas de la lista (si no tuvieramos el reset de css, las verian) */
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
+  align-items: center;
 }
+
 .header__nav li {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
-.header__nav a{
-  color:#3a053f;
+
+.header__nav a {
   text-decoration: none;
-  display: inline-block;
-  padding: 1rem;
+  color: #3a053f;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  transition: background 0.2s ease;
+}
+
+.header__nav a:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .footer {
@@ -303,27 +303,28 @@ main {
 /*                                media queries                               */
 /* -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
+
   .header {
-    display: flex;
     flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem 1rem;
+    text-align: center;
   }
 
-  .header__logo,
-  .header__nav {
-    margin: 0;
+  .header__logo {
+    font-size: 2.5rem;
   }
 
-  .contenedor-tarjetas {
-    display: flex;
+  .header__nav ul {
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
   }
 
-  .tarjeta-producto {
-    width: 80%;
+  .header__nav li {
+    font-size: 2rem;
   }
-  .form {
-    width: 80%;
-    min-width: 400px;
+
+  .carrito-icono {
+    font-size: 2.2rem;
   }
 }
