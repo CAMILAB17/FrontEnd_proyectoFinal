@@ -1,0 +1,6 @@
+[
+  { "id": "1", "nombre": "Sirena Nadadora", "img": "imagenes/sirenanadadora.jpg", "precio": 10000 },
+  { "id": "2", "nombre": "Peluches", "img": "imagenes/peluches.png", "precio": 15000 },
+  { "id": "3", "nombre": "Castillo", "img": "imagenes/castillo.jpg", "precio": 100000 }
+
+] 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header class = "header" >
+      <p class="header__logo">
+        <a href="../index.html">Tienda My Little Pony</a>
+      </p>
+        <nav class = "header__nav">
+            <ul>
+                <li><a href = "../index.html">Inicio</a></li>
+                <li><a href = "./contacto.html">Contacto 🔎</a> </li>
+                <li><a href="./carrito.html" class="carrito-icono">
+                    🛒 <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+ <main>
+      <section class="seccion-contacto">
+        <h1 class="titulo-contacto">Contactanos</h1>
+        <form
+          class="form"
+          action="https://formspree.io/f/mjkapvkb"
+          method="POST"
+        >
+
+          <div class="campo-form">
+            <label class=" titulo-contacto">Nombre:
+            <input type="text" name="nombre" required>
+            </label>
+          </div>
+
+          <div class="campo-form">
+            <label class=" titulo-contacto">Email:
+            <input type="email" name="email">
+            </label>
+          </div>
+
+          <div class="campo-form">
+            <label class=" titulo-contacto">Mensaje:
+            <textarea name="message"></textarea>
+            </label>
+          </div>
+
+        <!-- Asunto del mail que te llega -->
+        <input type="hidden" name="subject" value="Contacto desde el sitio" />
+        <!-- your other form fields go here -->
+        <button type="submit">Enviar</button>
+      </section>
+    </main>
+
+
+    <footer class ="footer">
+        <p>© 2025 My Little Pony Tienda. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+              <li>Instagram</li>
+            </ul>
+            <ul>
+              <li>Tiktok</li>
+            </ul>
+            <ul>
+              <li>X</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../js/contacto.js" type = "module" ></script>
+  </body>
+</html>

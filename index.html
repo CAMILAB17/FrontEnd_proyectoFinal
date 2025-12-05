@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Pony Tienda</title>
+</head>
+
+<body>
+    <header class = "header" >
+      <p class="header__logo">
+        <a href="./index.html">Tienda My Little Pony</a>
+      </p>
+        <nav class = "header__nav">
+            <ul>
+                <li><a href = "./index.html">Inicio</a></li>
+                <li><a href = "./pages/contacto.html">Contacto 🔎</a> </li>
+                 <li><a href="./pages/carrito.html" class="carrito-icono">
+                    🛒 <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <h1 class= "titulo-home">¡Bienvenidos a la tienda mágica de My Little Pony!</h1>
+        <h2 class="subtitle">En este lugar vas a conseguir los mejores productos de My Little Pony.</h2>
+        
+        <div class="imagen-centrada">
+            <img src="./imagenes/personajes.png" alt="Pony logo" width="400" height="200">
+        </div>
+        
+        <p>Si te gusta My Little Pony, estas en el lugar ideal. Acá podes comprar productos <strong>mágicos</strong>, <em>económicos</em> <s>y no originales</s>.</p>
+        <p>
+            Observa el unboxing de algunos de nuestros productos:
+            <a href="https://www.youtube.com/watch?v=9NYpZJQfqRM" target="_blank">Ir a youtube 📺</a>
+        </p>
+        
+        <section class="productos-home">
+        <h3>Nuestros productos</h3>
+
+        <div id = "contenedor-tarjetas" class = "contenedor-tarjetas"></div>
+
+      </section>
+   
+    </main>
+    
+    <footer class ="footer">
+        <p>© 2025 My Little Pony Tienda por CAMIB17. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+            <li>Instagram</li>
+            </ul>
+            <ul>
+            <li>Tiktok</li>
+            </ul>
+            <ul>
+            <li>X</li>
+            </ul>
+      </nav>
+    </footer>
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
